@@ -11,7 +11,7 @@
 		{
 		  "type": "login",
 		  "username": "rmmadmin",
-		  "password": "rmmadmin",
+		  "password": "RmmAdmin!@#$5",
 		  "usernameSelector": "input[aria-label='Username']",
 		  "passwordSelector": "input[type='password']",
 		  "submitSelector": "button.bg-primary[type='submit']",
