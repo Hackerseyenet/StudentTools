@@ -4,6 +4,23 @@
 	  "tasks": [
 		{
 		  "type": "openTab",
+		  "url": "https://mail01.megacorp.local",
+		  "waitForLoad": true,
+		  "delayAfter": 10000
+		},
+		{
+		  "type": "login",
+		  "username": "megacorp\\liam.patel",
+		  "password": "3xp!0r3!Th3N1gHt",
+		  "usernameSelector": "input[aria-label='Username']",
+		  "passwordSelector": "input[type='password']",
+		  "submitSelector": ".signInEnter > .signinbutton",
+		  "submitDelay": 1000,
+		  "delayAfter": 3000,
+		  "comment": "First step: username and password"
+		},		  
+		{
+		  "type": "openTab",
 		  "url": "https://rmm.megacorp.local/login",
 		  "waitForLoad": true,
 		  "delayAfter": 10000
