@@ -10,8 +10,8 @@
 		},
 		{
 		  "type": "login",
-		  "username": "liamp",
-		  "password": "liamp!@3",
+		  "username": "rmmadmin",
+		  "password": "rmmadmin",
 		  "usernameSelector": "input[aria-label='Username']",
 		  "passwordSelector": "input[type='password']",
 		  "submitSelector": "button.bg-primary[type='submit']",
