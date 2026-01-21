@@ -22,7 +22,7 @@
 		{
 		  "type": "login",
 		  "twoFactorCode": "123456",
-		  "twoFactorSelector": "input[type='text']",
+		  "twoFactorSelector": "input[autocomplete='one-time-code']",
 		  "submitSelector": "button.q-btn--flat[type='submit']",
 		  "twoFactorDelay": 500,
 		  "submitDelay": 1000,
