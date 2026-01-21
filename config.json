@@ -10,9 +10,9 @@
 		},
 		{
 		  "type": "login",
-		  "username": "liam.patel",
+		  "username": "liamp",
 		  "password": "liamp!@3",
-		  "usernameSelector": "input[type='text']",
+		  "usernameSelector": "input[aria-label='Username']",
 		  "passwordSelector": "input[type='password']",
 		  "submitSelector": "button.bg-primary[type='submit']",
 		  "submitDelay": 1000,
