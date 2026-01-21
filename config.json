@@ -1,24 +1,40 @@
 {
   "agents": {
     "ip-192-168-10-40.eu-west-1.compute.internal": {
-      "tasks": [
-        {
-          "type": "openTab",
-          "url": "https://rmm.megacorp.local/login",
-          "waitForLoad": true,
-          "delayAfter": 3000
-        },
-        {
-          "type": "login",
-          "username": "user1@test.com",
-          "password": "Pass123",
-          "usernameSelector": "input[type='email']",
-          "passwordSelector": "input[type='password']",
-          "submitSelector": "button.bg-primary[type='submit']",
-          "submitDelay": 1000,
-          "delayAfter": 5000
-        }
-      ]
+	  "tasks": [
+		{
+		  "type": "openTab",
+		  "url": "https://rmm.megacorp.local/login",
+		  "waitForLoad": true,
+		  "delayAfter": 2000
+		},
+		{
+		  "type": "login",
+		  "username": "liam.patel",
+		  "password": "liamp!@3",
+		  "usernameSelector": "input[type='email']",
+		  "passwordSelector": "input[type='password']",
+		  "submitSelector": "button.bg-primary[type='submit']",
+		  "submitDelay": 1000,
+		  "delayAfter": 3000,
+		  "comment": "First step: username and password"
+		},
+		{
+		  "type": "login",
+		  "twoFactorCode": "123456",
+		  "twoFactorSelector": "input[type='text']",
+		  "submitSelector": "button.q-btn--flat[type='submit']",
+		  "twoFactorDelay": 500,
+		  "submitDelay": 1000,
+		  "delayAfter": 3000,
+		  "comment": "Second step: 2FA code in popup"
+		},
+		{
+		  "type": "wait",
+		  "duration": 2000,
+		  "comment": "Wait for dashboard to load"
+		}
+	  ]
     }
   }
 }
