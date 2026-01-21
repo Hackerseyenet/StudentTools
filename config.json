@@ -6,7 +6,7 @@
 		  "type": "openTab",
 		  "url": "https://rmm.megacorp.local/login",
 		  "waitForLoad": true,
-		  "delayAfter": 2000
+		  "delayAfter": 10000
 		},
 		{
 		  "type": "login",
