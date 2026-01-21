@@ -12,7 +12,7 @@
 		  "type": "login",
 		  "username": "liam.patel",
 		  "password": "liamp!@3",
-		  "usernameSelector": "input[type='email']",
+		  "usernameSelector": "input[type='text']",
 		  "passwordSelector": "input[type='password']",
 		  "submitSelector": "button.bg-primary[type='submit']",
 		  "submitDelay": 1000,
