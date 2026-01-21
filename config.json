@@ -1,0 +1,24 @@
+{
+  "agents": {
+    "ip-192-168-10-40.eu-west-1.compute.internal": {
+      "tasks": [
+        {
+          "type": "openTab",
+          "url": "https://rmm.megacorp.local/login",
+          "waitForLoad": true,
+          "delayAfter": 3000
+        },
+        {
+          "type": "login",
+          "username": "user1@test.com",
+          "password": "Pass123",
+          "usernameSelector": "input[type='email']",
+          "passwordSelector": "input[type='password']",
+          "submitSelector": "button.bg-primary[type='submit']",
+          "submitDelay": 1000,
+          "delayAfter": 5000
+        }
+      ]
+    }
+  }
+}
