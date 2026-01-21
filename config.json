@@ -40,7 +40,7 @@
 	  "tasks": [
 		{
 		  "type": "openTab",
-		  "url": "https://mail01.megacorp.local/login",
+		  "url": "https://mail01.megacorp.local",
 		  "waitForLoad": true,
 		  "delayAfter": 10000
 		},
