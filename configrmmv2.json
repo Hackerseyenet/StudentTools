@@ -1,0 +1,101 @@
+{
+  "agents": {
+    "ip-192-168-10-40.eu-west-1.compute.internal": {
+	  "tasks": [
+		{
+		  "type": "openTab",
+		  "url": "https://mail01.megacorp.local",
+		  "waitForLoad": true,
+		  "delayAfter": 10000
+		},
+		{
+		  "type": "login",
+		  "username": "megacorp\\liam.patel",
+		  "password": "3xp!0r3!Th3N1gHt",
+		  "usernameSelector": "input[name='username']",
+		  "passwordSelector": "input[type='password']",
+		  "submitSelector": ".signInEnter > .signinbutton",
+		  "submitDelay": 1000,
+		  "delayAfter": 3000,
+		  "comment": "First step: username and password"
+		},		  
+		{
+		  "type": "openTab",
+		  "url": "https://rmm.megacorp.local/login",
+		  "waitForLoad": true,
+		  "delayAfter": 10000
+		},
+		{
+		  "type": "login",
+		  "username": "rmmadmin",
+		  "password": "RmmAdmin!@#$5",
+		  "usernameSelector": "input[aria-label='Username']",
+		  "passwordSelector": "input[type='password']",
+		  "submitSelector": "button.bg-primary[type='submit']",
+		  "submitDelay": 1000,
+		  "delayAfter": 3000,
+		  "comment": "First step: username and password"
+		},
+		{
+		  "type": "login",
+		  "twoFactorCode": "123456",
+		  "twoFactorSelector": "input[autocomplete='one-time-code']",
+		  "submitSelector": "button.q-btn--flat[type='submit']",
+		  "twoFactorDelay": 500,
+		  "submitDelay": 1000,
+		  "delayAfter": 3000,
+		  "comment": "Second step: 2FA code in popup"
+		},
+		{
+		  "type": "wait",
+		  "duration": 2000,
+		  "comment": "Wait for dashboard to load"
+		}
+	  ]
+    },
+	"ip-192-168-10-60.eu-west-1.compute.internal": {
+	  "tasks": [
+		{
+		  "type": "openTab",
+		  "url": "https://mail01.megacorp.local",
+		  "waitForLoad": true,
+		  "delayAfter": 10000
+		},
+		{
+		  "type": "login",
+		  "username": "megacorp\\ava.mitchell",
+		  "password": "1234abcd!",
+		  "usernameSelector": "input[name='username']",
+		  "passwordSelector": "input[type='password']",
+		  "submitSelector": ".signInEnter > .signinbutton",
+		  "submitDelay": 1000,
+		  "delayAfter": 3000,
+		  "comment": "First step: username and password"
+		},
+		{
+		  "type": "wait",
+		  "duration": 2000,
+		  "comment": "Wait for dashboard to load"
+		},
+		{
+		  "type": "openTab",
+		  "url": "https://github.com",
+		  "waitForLoad": true,
+		  "delayAfter": 10000
+		},
+		{
+		  "type": "openTab",
+		  "url": "https://stackoverflow.com/questions",
+		  "waitForLoad": true,
+		  "delayAfter": 10000
+		},
+		{
+		  "type": "openTab",
+		  "url": "https://www.w3schools.com/react/default.asp",
+		  "waitForLoad": true,
+		  "delayAfter": 10000
+		}   
+	  ]
+    }	  
+  }
+}
